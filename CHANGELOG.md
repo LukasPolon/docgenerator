@@ -23,6 +23,10 @@
 #######################################
 -->
 
+00.00.02 (07/10/2018)
+---------------------
+* Fix: deleted corrupted lines from Dockerfile
+
 00.00.01 (07/10/2018)
 ---------------------
 * Added: Dockerfile for production
