@@ -10,6 +10,3 @@
 
 FROM python:3.6.3
 RUN pip install --upgrade pip
-RUN mkdir /docgenerator
-WORKDIR /docgenerator
-RUN python setup.py develop
