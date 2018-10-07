@@ -1,2 +1,5 @@
-# docgenerator
-Automatic documentation building from Python code.
+PyDocGenerator
+--------------
+Generating Python documentation from source code.
+
+[Changelog](CHANGELOG.md)
