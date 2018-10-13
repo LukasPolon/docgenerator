@@ -22,6 +22,11 @@
 ##
 #######################################
 -->
+00.00.03 (07/10/2018)
+---------------------
+* Added: .coveragerc file for unittests configuration
+* Added: new Python package tests/
+* Changed: coverage==5.0a3 added to requirements.txt file
 
 00.00.02 (07/10/2018)
 ---------------------
