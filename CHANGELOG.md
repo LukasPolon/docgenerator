@@ -22,6 +22,16 @@
 ##
 #######################################
 -->
+
+00.00.04 (13/10/2018)
+---------------------
+* Added: shell.py module - function run() for running the application
+* Added cli/ package for application commands
+* Added: pydocgen command - application main command
+* Changed: requirements.txt - pylint and depedences added
+* Changed: setup.py new entry point - pdg
+* Added: test_shell and test_pydocgen unit tests
+
 00.00.03 (07/10/2018)
 ---------------------
 * Added: .coveragerc file for unittests configuration
