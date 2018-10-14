@@ -7,3 +7,5 @@ script:
   - coverage run -m unittest
   - coverage report
   - pylint src/ -r y --exit-zero
+after_success:
+  - coveralls
