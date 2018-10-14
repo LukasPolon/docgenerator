@@ -23,6 +23,12 @@
 #######################################
 -->
 
+00.00.05 (14/10/2018)
+---------------------
+* Added: FormatterMd class - formatting text to .md format
+* Added: unit tests for FormatterMd class
+* Added: configuration file for pylint - .pylintrc
+
 00.00.04 (13/10/2018)
 ---------------------
 * Added: shell.py module - function run() for running the application
