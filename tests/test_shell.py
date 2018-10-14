@@ -22,3 +22,4 @@ class TestShell(unittest.TestCase):
         mock_pydocgen.side_effect = ValueError
         run()
         self.assertTrue(mock_echo.called)
+        print(test_circleci)
