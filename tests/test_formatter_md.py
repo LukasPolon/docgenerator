@@ -125,4 +125,3 @@ class TestFormatterMd(unittest.TestCase):
         ]
         result = self.formattermd.create_table(rows, headers)
         self.assertEqual(result, exp_result)
-
