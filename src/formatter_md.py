@@ -113,3 +113,20 @@ class FormatterMd:
                 horizontal(str): horizontal rule string
         """
         return '---'
+
+    def create_table(self, rows, headers):
+        """ Creates table with the given size.
+
+        Args:
+           rows(list): list of lists; each nested list is a table row
+           headers(list): column names
+
+        Returns:
+            table(list): list of formatted strings; every string represents
+            single row, starting from headers
+        """
+        table = list()
+        table += [' | '.join(headers), '--- | ' * len(headers)]
+        for row in rows:
+            table.append(' | '.join(row))
+        return table
