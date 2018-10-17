@@ -23,6 +23,11 @@
 #######################################
 -->
 
+00.00.06 (17/10/2018)
+---------------------
+* Added: create_table method in FormatterMd class
+* Added: unit tests for create_table method
+
 00.00.05 (14/10/2018)
 ---------------------
 * Added: FormatterMd class - formatting text to .md format

@@ -113,3 +113,39 @@ class FormatterMd:
                 horizontal(str): horizontal rule string
         """
         return '---'
+
+    def _prepare_headers_cells(self, headers):
+        """Prepare headers cells for table creation.
+
+        Args:
+            headers (list): table column names
+
+        Returns:
+            headers_cells(list): headers cells ready for further table-related
+            operations
+        """
+        headers_row = ['{header} | '.format(header=h) for h in headers]
+        headers_row = ''.join(headers_row)
+        headers_separation = '--- | ' * len(headers)
+        headers_cells = [headers_row, headers_separation]
+        return headers_cells
+
+    def create_table(self, rows, headers):
+        """ Creates table with the given size.
+
+        Args:
+           rows(list): list of lists; each nested list is a table row
+           headers(list): column names
+
+        Returns:
+            table(list): list of formatted strings; every string represents
+            single row, starting from headers
+        """
+        headers_cells = self._prepare_headers_cells(headers)
+        table = headers_cells
+        for row in rows:
+            row_str = str()
+            for row_elem in row:
+                row_str += ''.join(row_elem + ' | ')
+            table.append(row_str)
+        return table

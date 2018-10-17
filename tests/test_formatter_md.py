@@ -108,3 +108,21 @@ class TestFormatterMd(unittest.TestCase):
         exp_result = '---'
         result = self.formattermd.add_horizontal()
         self.assertEqual(result, exp_result)
+
+    def test_create_table(self):
+        """ Test table creation feature. """
+        headers = ['Header1', 'Header2', 'Header3']
+        first_row = ['example', 'element', 'in first row']
+        second_row = ['good', 'bad', 'medium']
+        third_row = ['Python', 'Java', 'Brainfuck']
+        rows = [first_row, second_row, third_row]
+        exp_result = [
+            'Header1 | Header2 | Header3 | ',
+            '--- | --- | --- | ',
+            'example | element | in first row | ',
+            'good | bad | medium | ',
+            'Python | Java | Brainfuck | '
+        ]
+        result = self.formattermd.create_table(rows, headers)
+        self.assertEqual(result, exp_result)
+
