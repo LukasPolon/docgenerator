@@ -117,11 +117,11 @@ class TestFormatterMd(unittest.TestCase):
         third_row = ['Python', 'Java', 'Brainfuck']
         rows = [first_row, second_row, third_row]
         exp_result = [
-            'Header1 | Header2 | Header3 | ',
+            'Header1 | Header2 | Header3',
             '--- | --- | --- | ',
-            'example | element | in first row | ',
-            'good | bad | medium | ',
-            'Python | Java | Brainfuck | '
+            'example | element | in first row',
+            'good | bad | medium',
+            'Python | Java | Brainfuck'
         ]
         result = self.formattermd.create_table(rows, headers)
         self.assertEqual(result, exp_result)
